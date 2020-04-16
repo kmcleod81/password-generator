@@ -1,6 +1,6 @@
 # password-generator
 
-![Algorithm schema](./assets/images/top.jpg)![bottom](./assets/images/bottom.jpg)
+![Algorithm schema](./assets/images/passwordGen.jpg)
 
 ## Table of contents
 * [General info](#general-info)
