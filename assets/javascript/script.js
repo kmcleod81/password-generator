@@ -1,7 +1,7 @@
 // Generate an array of possible options that could be included in the password
 var lowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 var upperCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
-var numeric = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+var num = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 var specialChar = ["!", "@", "#", "$", "%", "^", "&", "*", "?", "~"];
 
 /// Start password generate
@@ -14,9 +14,9 @@ genButton.addEventListener("click", function () {
 
     // Prompt the user for what they want to inclde in their password
     var usespecialChar = confirm("Do you want Special Characters?");
+    var usenum = confirm("Do you want Numbers?");
 
     var randUpper = Math.floor(Math.random() * upperCase.length);
-    var randNumeric = Math.floor(Math.random() * numeric.length);
 
     //in a loop, for the length of te password, pick a random item from the  possible options
     for (var i = 0; i < length; i++) {
@@ -28,6 +28,8 @@ genButton.addEventListener("click", function () {
             storedPassword = storedPassword + lowerCase[randLower]
         }
     };
+
+
     // Display the results to the user
     var passwordElement = document.getElementById("password");
     passwordElement.value = storedPassword;
@@ -35,7 +37,3 @@ genButton.addEventListener("click", function () {
 
 
 
-
-
-
-// console.log(lowerCase[randLower]);
