@@ -59,7 +59,7 @@ genButton.addEventListener("click", function () {
                 storedPassword = storedPassword + selectedArray[randCharacterPosition];
 
             } else {
-                //computer picked an array that the user didn't want to include in the password, so then stays in the same position in the loop until the computer picks one the user doesn't
+                //computer picked an array that the user didn't want to include in the password, so then stays in the same position in the loop until the computer picks one the user does want
                 i--;
             }
         };
